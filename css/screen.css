@@ -315,7 +315,6 @@ select {
 
 .c-app {
   min-height: 100vh;
-
   display: grid;
   grid-template-columns: 260px auto;
   grid-template-rows: 70px auto;
@@ -340,25 +339,41 @@ select {
 
 .c-app__sidebar {
   background-color: var(--global-color-dark_blue);
+  width: 260px;
+  height: 100vh;
+  display: block;
+  overflow: auto;
 }
 
-.c-nav {
+.c-app__sidebar::-webkit-scrollbar {
+  display: none;
 }
 
 .c-nav__menu {
+  padding: 0;
   list-style-type: none;
-  padding-left: calc(var(--global-baseline) * 5);
 }
 
 .c-menu__item {
   display: flex;
   align-items: center;
   margin: var(--global-baseline) 0;
-  padding: var(--global-whitespace-sm) 0;
+  padding: var(--global-whitespace-sm) calc(var(--global-baseline) * 5);
+  cursor: pointer;
 }
 
 .c-menu__item svg {
   fill: var(--global-color-neutral);
+}
+
+.c-menu__item:hover {
+  background-color: var(--global-color-neutral-xx-dark);
+  border-left: 5px solid var(--global-color-purple);
+  padding-left: calc(var(--global-baseline) * 4);
+}
+
+.c-menu__item:hover svg {
+  fill: var(--global-color-purple);
 }
 
 .c-item--link {
@@ -367,8 +382,19 @@ select {
   color: var(--global-color-white);
 }
 
-.c-app_main {
+.c-item--link:hover {
+  color: var(--global-color-white);
+}
+
+.c-app__main {
   box-shadow: var(--global-shadow);
+  height: 100vh;
+  display: block;
+  overflow: auto;
+}
+
+.c-app__main::-webkit-scrollbar {
+  display: none;
 }
 /*------------------------------------*\
 #UTILITIES

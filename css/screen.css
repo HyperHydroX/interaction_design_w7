@@ -342,6 +342,31 @@ select {
   background-color: var(--global-color-dark_blue);
 }
 
+.c-nav {
+}
+
+.c-nav__menu {
+  list-style-type: none;
+  padding-left: calc(var(--global-baseline) * 5);
+}
+
+.c-menu__item {
+  display: flex;
+  align-items: center;
+  margin: var(--global-baseline) 0;
+  padding: var(--global-whitespace-sm) 0;
+}
+
+.c-menu__item svg {
+  fill: var(--global-color-neutral);
+}
+
+.c-item--link {
+  padding-left: calc(var(--global-baseline) * 2);
+  text-decoration: none;
+  color: var(--global-color-white);
+}
+
 .c-app_main {
   box-shadow: var(--global-shadow);
 }

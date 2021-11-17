@@ -39,13 +39,13 @@
   /* border radius */
 
   /* whitespace */
-  --global-baseline: 6px;
-  --global-whitespace-xxs: var(--global-baseline); /* 6px */
-  --global-whitespace-xs: calc(var(--global-baseline) * 2); /* 12px */
-  --global-whitespace-sm: calc(var(--global-baseline) * 3); /* 18px */
-  --global-whitespace-md: calc(var(--global-baseline) * 4); /* 24px */
-  --global-whitespace-lg: calc(var(--global-baseline) * 5); /* 30px */
-  --global-whitespace-xl: calc(var(--global-baseline) * 6); /* 36px */
+  --global-baseline: 5px;
+  --global-whitespace-xxs: var(--global-baseline); /* 5px */
+  --global-whitespace-xs: calc(var(--global-baseline) * 2); /* 10px */
+  --global-whitespace-sm: calc(var(--global-baseline) * 3); /* 15px */
+  --global-whitespace-md: calc(var(--global-baseline) * 4); /* 20px */
+  --global-whitespace-lg: calc(var(--global-baseline) * 5); /* 25px */
+  --global-whitespace-xl: calc(var(--global-baseline) * 6); /* 30px */
 
   /* transitions */
 }
@@ -323,6 +323,14 @@ select {
 
 .c-app__logo {
   background-color: var(--global-color-neutral-xx-dark);
+  color: var(--global-color-white);
+}
+
+.c-logo {
+  font-size: 15px;
+  padding: var(--global-whitespace-lg);
+  line-height: calc(var(--global-baseline) * 4);
+  margin: 0;
 }
 
 .c-app__topbar {

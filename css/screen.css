@@ -34,6 +34,7 @@
   --global-text-color: var(--global-color-dark_blue);
 
   /* Shadows */
+  --global-shadow: 0px 2px 6px rgba(0, 0, 0, 0.04);
 
   /* border radius */
 
@@ -312,6 +313,30 @@ select {
     Website main logo
 */
 
+.c-app {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 260px auto;
+  grid-template-rows: 70px auto;
+}
+
+.c-app__logo {
+  background-color: var(--global-color-neutral-xx-dark);
+}
+
+.c-app__topbar {
+  background-color: var(--global-color-white);
+  box-shadow: var(--global-shadow);
+}
+
+.c-app__sidebar {
+  background-color: var(--global-color-dark_blue);
+}
+
+.c-app_main {
+  box-shadow: var(--global-shadow);
+}
 /*------------------------------------*\
 #UTILITIES
 \*------------------------------------*/

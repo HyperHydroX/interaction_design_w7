@@ -3,8 +3,8 @@
 \*------------------------------------*/
 
 @font-face {
-  font-family: "SourceSansPro";
-  src: url(../fonts/SourceSansPro-Regular.ttf) format("ttf");
+  font-family: "Sourc Sans Pro";
+  src: url("../fonts/SourceSansPro-Regular.ttf") format("ttf");
 }
 
 /*------------------------------------*\
@@ -39,7 +39,7 @@
 
   /* whitespace */
   --global-baseline: 6px;
-  --global-whitespace-xxs: var(var(--global-baseline)); /* 6px */
+  --global-whitespace-xxs: var(--global-baseline); /* 6px */
   --global-whitespace-xs: calc(var(--global-baseline) * 2); /* 12px */
   --global-whitespace-sm: calc(var(--global-baseline) * 3); /* 18px */
   --global-whitespace-md: calc(var(--global-baseline) * 4); /* 24px */
@@ -62,7 +62,7 @@
 html {
   font-size: 16px;
   line-height: 1.5;
-  font-family: "SourceSansPro", Helvetica, arial, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, arial, sans-serif;
   color: var(--global-text-color);
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;

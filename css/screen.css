@@ -30,11 +30,21 @@
   --global-color-neutral-x-dark: #4d4f5c;
   --global-color-neutral-xx-dark: #3b3b53;
 
+  --global-background-color: var(--global-color-neutral-xx-light);
+  --global-text-color: var(--global-color-dark_blue);
+
   /* Shadows */
 
   /* border radius */
 
   /* whitespace */
+  --global-baseline: 6px;
+  --global-whitespace-xxs: var(var(--global-baseline)); /* 6px */
+  --global-whitespace-xs: calc(var(--global-baseline) * 2); /* 12px */
+  --global-whitespace-sm: calc(var(--global-baseline) * 3); /* 18px */
+  --global-whitespace-md: calc(var(--global-baseline) * 4); /* 24px */
+  --global-whitespace-lg: calc(var(--global-baseline) * 5); /* 30px */
+  --global-whitespace-xl: calc(var(--global-baseline) * 6); /* 36px */
 
   /* transitions */
 }
@@ -53,10 +63,11 @@ html {
   font-size: 16px;
   line-height: 1.5;
   font-family: "SourceSansPro", Helvetica, arial, sans-serif;
+  color: var(--global-text-color);
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
+  background-color: var(--global-background-color);
 }
 
 *,
@@ -107,20 +118,21 @@ h3 {
 
 h1 {
   font-size: 36px;
-  line-height: 48px;
-  margin: 0 0 24px;
+  line-height: calc(var(--global-baseline) * 10);
+  margin: 0 0 var(--global-whitespace-md);
 }
 
 h2 {
-  font-size: 32px;
-  line-height: 40px;
-  margin: 0 0 24px;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: calc(var(--global-baseline) * 8);
+  margin: 0 0 var(--global-whitespace-lg);
 }
 
 h3 {
   font-size: 26px;
-  line-height: 32px;
-  margin: 0 0 24px;
+  line-height: calc(var(--global-baseline) * 6);
+  margin: 0 0 var(--global-whitespace-md);
 }
 
 h4,
@@ -128,8 +140,8 @@ h5,
 h6 {
   font-size: 16px;
   font-weight: 600;
-  line-height: 24px;
-  margin: 0 0 24px;
+  line-height: calc(var(--global-baseline) * 5);
+  margin: 0 0 var(--global-whitespace-md);
 }
 
 p,
@@ -139,7 +151,7 @@ dl,
 table,
 address,
 figure {
-  margin: 0 0 24px;
+  margin: 0 0 var(--global-whitespace-md);
 }
 
 ul,

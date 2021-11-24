@@ -34,7 +34,8 @@
   --global-text-color: var(--global-color-dark_blue);
 
   /* Shadows */
-  --global-shadow: 0px 2px 6px rgba(0, 0, 0, 0.04);
+  --global-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  --global-input-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
 
   /* border radius */
 
@@ -419,12 +420,60 @@ select {
 }
 
 .c-dashboard__item {
-  background-color: var(--global-color-neutral-x-light);
+  background-color: var(--global-color-white);
   grid-column: span 12;
   padding: var(--global-whitespace-xs) var(--global-whitespace-sm);
 }
 
+/*
+    Component: Card
+    ---
+    Card inside dashboard
+*/
 
+.c-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.c-card__title {
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0;
+}
+
+/*
+    Component: Input
+    ---
+    inputs
+*/
+.c-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: 1px solid var(--global-color-neutral-x-light);
+  border-radius: 3px;
+  font-family: inherit;
+  line-height: calc(var(--global-baseline) * 3);
+  padding: var(--global-whitespace-xxs) var(--global-whitespace-sm);
+  outline: none;
+  box-shadow: var(--global-input-shadow);
+}
+
+.c-custom-select {
+  display: block;
+  position: relative;
+}
+
+.c-custom-select__symbol {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  pointer-events: none;
+  fill: #a4afb7;
+}
 
 /*------------------------------------*\
 #UTILITIES

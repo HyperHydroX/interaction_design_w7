@@ -70,6 +70,12 @@
           d="M26.6 10.4l2.2-4.2-2.8-2.8-4.2 2.2c-0.635-0.364-1.372-0.642-2.155-0.793l-0.045-0.007-1.6-4.8h-4l-1.6 4.6c-0.76 0.198-1.425 0.472-2.041 0.822l0.041-0.022-4.2-2.2-3 3 2.2 4.2c-0.328 0.575-0.602 1.24-0.787 1.942l-0.013 0.058-4.6 1.6v4l4.6 1.6c0.2 0.8 0.6 1.4 0.8 2.2l-2.2 4.2 2.8 2.8 4.2-2.2c0.635 0.364 1.372 0.642 2.155 0.793l0.045 0.007 1.6 4.6h4l1.6-4.6c0.8-0.2 1.4-0.6 2.2-0.8l4.2 2.2 2.8-2.8-2.2-4.2c0.364-0.635 0.642-1.372 0.793-2.155l0.007-0.045 4.6-1.6v-4l-4.6-1.6c-0.198-0.76-0.472-1.425-0.822-2.041l0.022 0.041zM16 22c-0.032 0.001-0.071 0.001-0.109 0.001-3.254 0-5.892-2.638-5.892-5.892 0-0.038 0-0.077 0.001-0.115l-0 0.006c-0.001-0.032-0.001-0.071-0.001-0.109 0-3.254 2.638-5.892 5.892-5.892 0.038 0 0.077 0 0.115 0.001l-0.006-0c0.032-0.001 0.071-0.001 0.109-0.001 3.254 0 5.892 2.638 5.892 5.892 0 0.038-0 0.077-0.001 0.115l0-0.006c0.001 0.032 0.001 0.071 0.001 0.109 0 3.254-2.638 5.892-5.892 5.892-0.038 0-0.077-0-0.115-0.001l0.006 0z"
         ></path>
       </symbol>
+
+      <symbol id="c-icon_down-arrow-small" viewBox="0 0 32 32">
+        <path
+          d="M16 26.182l-16-16.172 4.148-4.192 11.852 11.98 11.852-11.98 4.148 4.192z"
+        ></path>
+      </symbol>
     </svg>
 
     <div class="c-app">
@@ -149,8 +155,29 @@
           <div class="c-dashboard__item">
             <div class="c-card">
               <div class="c-card__header">
-                <h2 class="c-card__title">Visitors per day</h2>
-                <select name="days" id="days"></select>
+                <h3 class="c-card__title">Visitors per day</h3>
+                <span class="c-custom-select">
+                  <select
+                    class="c-input c-custom-select__input"
+                    name="days"
+                    id="days"
+                  >
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                  </select>
+                  <svg class="c-custom-select__symbol" width="11" height="11">
+                    <use
+                      xlink:href="#c-icon_down-arrow-small"
+                      width="11"
+                      height="11"
+                    />
+                  </svg>
+                </span>
               </div>
               <div class="c-card__body"></div>
             </div>

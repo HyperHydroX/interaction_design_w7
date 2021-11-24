@@ -372,6 +372,15 @@ select {
   padding-left: calc(var(--global-baseline) * 4);
 }
 
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .c-menu__item:hover svg {
   fill: var(--global-color-purple);
 }
@@ -387,15 +396,36 @@ select {
 }
 
 .c-app__main {
-  box-shadow: var(--global-shadow);
   height: 100vh;
   display: block;
   overflow: auto;
+  margin: var(--global-whitespace-md);
 }
 
 .c-app__main::-webkit-scrollbar {
   display: none;
 }
+
+/*
+    Component: Dashboard
+    ---
+    Website main Dashboard
+*/
+
+.c-dasboard {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 30px;
+}
+
+.c-dashboard__item {
+  background-color: var(--global-color-neutral-x-light);
+  grid-column: span 12;
+  padding: var(--global-whitespace-xs) var(--global-whitespace-sm);
+}
+
+
+
 /*------------------------------------*\
 #UTILITIES
 \*------------------------------------*/
@@ -495,6 +525,35 @@ select {
 
 .u-text-sm {
   font-size: 14px;
+}
+
+/*
+    Utilities: Grid spacing
+    Utility classes to declare the width of a grid item
+*/
+
+.u-grid-item-space-1-4 {
+  grid-column: span 4;
+}
+
+.u-grid-item-space-1-6 {
+  grid-column: span 6;
+}
+
+.u-grid-item-space-1-8 {
+  grid-column: span 8;
+}
+
+.u-grid-item-space-2-4 {
+  grid-area: span 2 / span 4;
+}
+
+.u-grid-item-space-2-8 {
+  grid-area: span 2 / span 8;
+}
+
+.u-grid-item-space-4-4 {
+  grid-area: span 4 / span 4;
 }
 
 /*------------------------------------*\

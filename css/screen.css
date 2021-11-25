@@ -62,8 +62,8 @@
 */
 
 html {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 94%;
+  line-height: 1.25;
   font-family: "Source Sans Pro", Helvetica, arial, sans-serif;
   color: var(--global-text-color);
   box-sizing: border-box;
@@ -119,20 +119,20 @@ h3 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 2.4rem;
   line-height: calc(var(--global-baseline) * 10);
   margin: 0 0 var(--global-whitespace-md);
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 1.8rem;
   font-weight: normal;
   line-height: calc(var(--global-baseline) * 8);
   margin: 0 0 var(--global-whitespace-lg);
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 1.7rem;
   line-height: calc(var(--global-baseline) * 6);
   margin: 0 0 var(--global-whitespace-md);
 }
@@ -140,7 +140,7 @@ h3 {
 h4,
 h5,
 h6 {
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 600;
   line-height: calc(var(--global-baseline) * 5);
   margin: 0 0 var(--global-whitespace-md);
@@ -168,7 +168,7 @@ li ol {
 
 blockquote {
   font-style: normal;
-  font-size: 23px;
+  font-size: 1.5rem;
   line-height: 32px;
   margin: 0 0 24px;
 }
@@ -180,7 +180,7 @@ blockquote * {
 
 figcaption {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.8rem;
   line-height: 16px;
   margin-top: 8px;
 }
@@ -327,7 +327,7 @@ select {
 }
 
 .c-logo {
-  font-size: 15px;
+  font-size: 1rem;
   padding: var(--global-whitespace-lg);
   line-height: calc(var(--global-baseline) * 4);
   margin: 0;
@@ -439,7 +439,7 @@ select {
 
 .c-card__title {
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1.2rem;
   margin: 0;
 }
 
@@ -573,7 +573,7 @@ select {
 */
 
 .u-text-sm {
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 /*

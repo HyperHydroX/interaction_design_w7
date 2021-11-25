@@ -4,6 +4,7 @@
     const draw_chart = (chart_data) => {
         const ctx = document.querySelector(".js-graph").getContext("2d");
 
+        
         const data = {
         labels: ['Week1', 'Week2', 'Week3', 'Week4', 'Week5', 'Week6', 'Week7'],
             datasets: [{
@@ -34,6 +35,9 @@
             }
         });
 
+        chart.update();
+
+        
     };
 
     const get_data = (api_data) => {
